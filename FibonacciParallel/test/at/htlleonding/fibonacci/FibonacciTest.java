@@ -34,19 +34,8 @@ import org.junit.Ignore;
  * @author P. Bauer <p.bauer@htl-leonding.ac.at>
  */
 public class FibonacciTest {
-    public final int N = 45;
+    private final int N = 45;
     
-    public FibonacciTest() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     @Test
     public void testRecursionBottom() {
         
@@ -78,6 +67,4 @@ public class FibonacciTest {
     public void testLarge() {
         assertEquals(1_836_311_903, Fibonacci.getNumberSingle(N));
     }
-    
-    public void testParallel
 }
