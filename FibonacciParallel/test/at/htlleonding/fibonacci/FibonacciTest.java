@@ -37,7 +37,7 @@ public class FibonacciTest {
     private final int N = 45;
     
     @Test
-    public void testRecursionBottom() {
+    public void testFirstNumber() {
         
         assertEquals(1, Fibonacci.getNumberSingle(0));
         assertEquals(1, Fibonacci.getNumberSingle(1));
@@ -47,24 +47,27 @@ public class FibonacciTest {
     }
     
     @Test
-    public void test2() {
+    public void testSecondNumber() {
         assertEquals(2, Fibonacci.getNumberSingle(2));
         assertEquals(2, Fibonacci.getNumberParallel(2));
     }
     
     @Test
-    public void test3() {
+    public void testThirdNumber() {
         assertEquals(3, Fibonacci.getNumberSingle(3));
+        assertEquals(3, Fibonacci.getNumberParallel(3));
     }
     
     @Test
-    public void test4() {
+    public void testFourthNumber() {
         assertEquals(5, Fibonacci.getNumberSingle(4));
+        assertEquals(5, Fibonacci.getNumberParallel(4));
     }
     
     @Test
     @Ignore
     public void testLarge() {
         assertEquals(1_836_311_903, Fibonacci.getNumberSingle(N));
+        assertEquals(1_836_311_903, Fibonacci.getNumberParallel(N));
     }
 }

@@ -27,7 +27,7 @@ package at.htlleonding.fibonacci;
  *
  * @author P. Bauer <p.bauer@htl-leonding.ac.at>
  */
-public class Fibonacci {
+class Fibonacci {
 
     static int getNumberSingle(int n) {
         if (n < 2)
@@ -37,15 +37,7 @@ public class Fibonacci {
     }
 
     static int getNumberParallel(int n) {
-        Thread t1 = new Thread(new Runnable() {
-
-            @Override
-            public void run() {
-                
-            }
-            
-        });
-        return 1;
+        return -1;
     }
     
 }
